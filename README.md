@@ -40,7 +40,6 @@ DeviceFileEvents
 | order by Timestamp desc  
 | project Timestamp, DeviceName, ActionType, FileName, FolderPath, SHA256, Account = InitiatingProcessAccountName
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/71402e84-8767-44f8-908c-1805be31122d">
 
 <img width="1077" height="420" alt="image" src="https://github.com/user-attachments/assets/7bb36bf8-1365-4fce-9966-0e01556b3a93" />
 
@@ -48,7 +47,7 @@ DeviceFileEvents
 
 ### 2. Searched the `DeviceProcessEvents` Table
 
-Searched for any `ProcessCommandLine` that contained the string "tor-browser-windows-x86_64-portable-14.0.1.exe". Based on the logs returned, at `2024-11-08T22:16:47.4484567Z`, an employee on the "threat-hunt-lab" device ran the file `tor-browser-windows-x86_64-portable-14.0.1.exe` from their Downloads folder, using a command that triggered a silent installation.
+Searched for any `ProcessCommandLine` that contained the string "tor-browser-windows-x86_64". Based on the logs returned, at `2026-01-06T21:17:43.9557981Z`, an employee on the "wutang" device ran the file `tor-browser-windows-x86_64-portable-14.0.1.exe` from their Downloads folder, using a command that triggered a silent installation.
 
 **Query used to locate event:**
 
