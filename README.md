@@ -101,6 +101,135 @@ DeviceNetworkEvents
 
 
 ---
+## Chronological Event Timeline 
+
+### 1. File Download – TOR Installer
+
+- **Timestamp:** `2026-01-06T21:17:43.0000000Z`
+- **Event:** The user "methodman" downloaded a file named `tor-browser-windows-x86_64-portable-15.0.3.exe` to the Downloads folder.
+- **Action:** File download detected.
+- **File Path:** `C:\Users\methodman\Downloads\tor-browser-windows-x86_64-portable-15.0.3.exe`
+
+---
+
+### 2. Process Execution – TOR Browser Installation
+
+- **Timestamp:** `2026-01-06T21:18:07.0000000Z`
+- **Event:** The user "methodman" executed the file `tor-browser-windows-x86_64-portable-15.0.3.exe` in silent mode, initiating a background installation of the TOR Browser.
+- **Action:** Process creation detected.
+- **Command:** `tor-browser-windows-x86_64-portable-15.0.3.exe /S`
+- **File Path:** `C:\Users\methodman\Downloads\tor-browser-windows-x86_64-portable-15.0.3.exe`
+
+---
+
+### 3. Process Execution – TOR Browser Launch
+
+- **Timestamp:** `2026-01-06T21:19:35.0000000Z`
+- **Event:** User "methodman" opened the TOR browser. Subsequent processes associated with TOR browser, such as `firefox.exe` and `tor.exe`, were also created, indicating that the browser launched successfully.
+- **Action:** Process creation of TOR browser–related executables detected.
+- **File Path:** `C:\Users\methodman\Desktop\Tor Browser\Browser\TorBrowser\tor\tor.exe`
+
+---
+
+### 4. Network Connection – TOR Network
+
+- **Timestamp:** `2026-01-06T21:20:55.0000000Z`
+- **Event:** A network connection to IP `81.201.202.101` on port `9001` by user "methodman" was established using `tor.exe`, confirming TOR browser network activity.
+- **Action:** Connection success.
+- **Process:** `tor.exe`
+- **File Path:** `C:\Users\methodman\Desktop\Tor Browser\Browser\TorBrowser\tor\tor.exe`
+
+---
+
+### 5. Additional Network Connections – TOR Browser Activity
+
+- **Timestamps:**
+  - `2026-01-06T21:20:55Z` – Multiple Tor relay connections on port `9001`
+  - `2026-01-06T21:21:07Z` – Encrypted Tor traffic on port `443`
+  - `2026-01-06T21:20:47Z` – Local proxy activity on `127.0.0.1:9150`
+- **Event:** Additional TOR network connections were established, indicating ongoing activity by user "methodman" through the TOR browser.
+- **Action:** Multiple successful connections detected.
+
+---
+
+### 6. File Creation – TOR Shopping List
+
+- **Timestamp:** `2026-01-06T21:18:19.0000000Z`
+- **Event:** The user "methodman" created a file named `tor-shopping-list.txt` on the desktop, potentially indicating a list or notes related to their TOR browser activities.
+- **Action:** File creation detected.
+- **File Path:** `C:\Users\methodman\Desktop\tor-shopping-list.txt`
+
+---
+
+## Summary
+
+The user "methodman" on the "wutang" device initiated and completed the installation of the TOR browser. They proceeded to launch the browser, establish connections within the TOR network, and created various files related to TOR on their desktop, including a file named `tor-shopping-list.txt`. This sequence of activities indicates that the user actively installed, configured, and used the TOR browser, likely for anonymous browsing purposes, with possible documentation in the form of the "shopping list" file.
+
+---
+
+## Response Taken
+
+TOR usage was confirmed on the endpoint `wutang` by the user `methodman`. The device was isolated, and the user's direct manager was notified.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Chronological Event Timeline 
 
